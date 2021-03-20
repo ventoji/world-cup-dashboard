@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/ventoji/world-cup-dashboard.svg?branch=master)](https://travis-ci.com/ventoji/world-cup-dashboard)
 
 ## Coding exercise
 
