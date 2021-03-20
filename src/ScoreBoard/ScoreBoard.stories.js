@@ -1,6 +1,7 @@
 import React from 'react';
 import ScoreBoard from './ScoreBoard';
 import { withKnobs } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
 
 export default {
   title: 'WC Components/ScoreBoard',
@@ -30,3 +31,9 @@ const startedGames = [
 const Template = () => <ScoreBoard games={startedGames} />;
 
 export const Default = Template.bind({});
+
+Default.args = {
+  games: [],
+  updateScore: action('cick'),
+  finishGame: action('cick')
+};

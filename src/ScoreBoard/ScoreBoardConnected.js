@@ -33,7 +33,6 @@ const ScoreBoardConnected = ({
 };
 
 const mapStatetoProps = (state) => {
-  console.log(state);
   return {
     games: state.activeGames,
   };

@@ -1,90 +1,12 @@
-import React, { useState } from 'react';
-import InputWC from '../InputWC';
-import ButtonWC from '../ButtonWC';
+import React from 'react';
 import PropTypes from 'prop-types';
+import MatchStarted from '../MatchStarted';
 
-const SCORE_STYLE = {
-  li: {
-    display: 'flex',
-    alignContent: 'space-around',
-    marginBottom: '10px',
-  },
-};
 
-const MatchStarted = ({ match, updateScore, handleFinish }) => {
-  const [matchScore, setMatchScore] = useState({
-    startAt: match.startAt,
-    id: match.id,
-    homeTeam: match.homeTeam,
-    awayTeam: match.awayTeam,
-    homeScore: 0,
-    awayScore: 0,
-  });
-
-  const handleMatchScore = (event) => {
-    // console.log(event.target.name);
-    // console.log(event.target.value);
-
-    setMatchScore({
-      ...matchScore,
-      [event.target.name]: event.target.value,
-    });
-  };
-
-  const submitScore = (event) => {
-    event.preventDefault();
-    updateScore({
-      id: matchScore.id,
-      homeScore: matchScore.homeScore,
-      awayScore: matchScore.awayScore,
-    });
-  };
-
-  const submitFinishGame = (event) => {
-    event.preventDefault();
-    handleFinish(matchScore);
-  };
-
-  return (
-    <li className="list-player" style={SCORE_STYLE.li}>
-      <span style={{ color: 'blue' }}> Match: </span>{' '}
-      <InputWC
-        htmlId="homeScore"
-        label={match.homeTeam}
-        value={matchScore.homeScore}
-        name="homeScore"
-        type="number"
-        style={{ width: '35%' }}
-        onChange={handleMatchScore}
-      />{' '}
-      -
-      <InputWC
-        htmlId="awayScore"
-        label={match.awayTeam}
-        value={matchScore.awayScore}
-        name="awayScore"
-        type="number"
-        style={{ width: '35%' }}
-        onChange={handleMatchScore}
-      />
-      <ButtonWC
-        label="update"
-        style={{ height: '35%' }}
-        onClick={submitScore}
-      />
-      <ButtonWC
-        label="finish"
-        style={{ height: '35%' }}
-        onClick={submitFinishGame}
-      />
-    </li>
-  );
-};
 const ScoreBoard = ({ games, updateScore, finishGame }) => {
   const shouldRender = Object.keys(games).length !== 0;
 
   const handleFinish = (matchScore) => {
-    console.log(matchScore);
     finishGame(matchScore);
   };
 
@@ -104,13 +26,19 @@ const ScoreBoard = ({ games, updateScore, finishGame }) => {
   );
 };
 
-InputWC.propTypes = {
+ScoreBoard.propTypes = {
   /** Array of active games */
   games: PropTypes.array,
+   /** Function to update Score */
+  updateScore: PropTypes.func.isRequired,
+    /** Function to finish a game */
+  finishGame: PropTypes.func.isRequired
 };
 
 ScoreBoard.defaultProps = {
   games: [],
+  updateScore: () => {},
+  finishGame: () => {}
 };
 
 export default ScoreBoard;
