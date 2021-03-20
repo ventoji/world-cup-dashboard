@@ -1,7 +1,7 @@
 import React from 'react';
 import LabelWC from '../LabelWC';
 import PropTypes from 'prop-types';
-//import './InputWC.css';
+
 
 const InputWC = ({
   htmlId,
@@ -68,7 +68,7 @@ InputWC.propTypes = {
   error: PropTypes.string,
 
   /** Child component to display next to the input */
-  children: PropTypes.node,
+  children: PropTypes.node
 };
 
 InputWC.defaultProps = {
@@ -78,7 +78,7 @@ InputWC.defaultProps = {
   label: '',
   placeholder: 'value here',
   required: true,
-  onChange: () => {},
+  onChange: () => {}
 };
 
 export default InputWC;
