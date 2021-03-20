@@ -93,7 +93,7 @@ const MatchStarted = ({ match, updateScore, handleFinish }) => {
   };
   
   MatchStarted.defaultProps = {
-    games: {},
+    match: {},
     updateScore: () => {},
     finishGame: () => {}
   };

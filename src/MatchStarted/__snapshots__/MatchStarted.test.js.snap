@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MatchStarted  Component Should render properly 1`] = `
+<li
+  className="list-player"
+  style={
+    Object {
+      "alignContent": "space-around",
+      "display": "flex",
+      "marginBottom": "10px",
+    }
+  }
+>
+  <span
+    style={
+      Object {
+        "color": "blue",
+      }
+    }
+  >
+     Match: 
+  </span>
+   
+  <InputWC
+    htmlId="homeScore"
+    label="Mexico"
+    name="homeScore"
+    onChange={[Function]}
+    placeholder="value here"
+    required={true}
+    style={
+      Object {
+        "width": "35%",
+      }
+    }
+    type="number"
+    value={0}
+  />
+   
+  -
+  <InputWC
+    htmlId="awayScore"
+    label="Canada"
+    name="awayScore"
+    onChange={[Function]}
+    placeholder="value here"
+    required={true}
+    style={
+      Object {
+        "width": "35%",
+      }
+    }
+    type="number"
+    value={0}
+  />
+  <ButtonWC
+    label="update"
+    onClick={[Function]}
+    style={
+      Object {
+        "height": "35%",
+      }
+    }
+  />
+  <ButtonWC
+    label="finish"
+    onClick={[Function]}
+    style={
+      Object {
+        "height": "35%",
+      }
+    }
+  />
+</li>
+`;
