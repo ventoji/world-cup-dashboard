@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import ScoreBoard from './ScoreBoard';
-// import { listMatches } from '../utils';
+
 import {
   updateMatchWC,
   finishMatchWC,

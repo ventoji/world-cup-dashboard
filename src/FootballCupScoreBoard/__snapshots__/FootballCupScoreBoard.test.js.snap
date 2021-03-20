@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FootballCupScoreBoard  Component Should render properly 1`] = `
+<Fragment>
+  <main
+    className="main-content"
+  >
+    <div
+      className="show-matches"
+    >
+      <div
+        className="scoreboard"
+      >
+        <h4>
+           list of active games 
+        </h4>
+        <Connect(ScoreBoardConnected) />
+      </div>
+      <div
+        className="summary-result"
+      >
+        <h4>
+           Summary of the ended games 
+        </h4>
+        <Connect(SummaryResultWCConnected) />
+      </div>
+    </div>
+    <div
+      className="add-players"
+    >
+      <h4>
+         Start a new game 
+      </h4>
+      <Connect(StartGameWCConnected) />
+    </div>
+  </main>
+</Fragment>
+`;

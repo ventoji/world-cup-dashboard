@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScoreBoard  Component Should render properly 1`] = `
+<ul
+  className="list-matches"
+>
+  <MatchStarted
+    finishGame={[Function]}
+    handleFinish={[Function]}
+    key="1"
+    match={
+      Object {
+        "awayScore": 0,
+        "awayTeam": "Canada",
+        "homeScore": 0,
+        "homeTeam": "Mexico",
+        "id": 1,
+        "startAt": 1616113389731,
+      }
+    }
+    updateScore={[Function]}
+  />
+  <MatchStarted
+    finishGame={[Function]}
+    handleFinish={[Function]}
+    key="2"
+    match={
+      Object {
+        "awayScore": 0,
+        "awayTeam": "Brasil",
+        "homeScore": 0,
+        "homeTeam": "Spain",
+        "id": 2,
+        "startAt": 1616113389731,
+      }
+    }
+    updateScore={[Function]}
+  />
+</ul>
+`;
