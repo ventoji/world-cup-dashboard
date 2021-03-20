@@ -1,6 +1,6 @@
 {
   "name": "wordcup-dashboard",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "world cup exercise",
   "main": "index.js",
   "homepage": "https://github.com/ventoji/world-cup-dashboard",
@@ -16,8 +16,8 @@
     "lint:fix": "eslint src/**/*.{js,jsx} --fix",
     "prettier": "prettier --write src/**/*.{js,jsx,json,css,scss,md}",
     "release": "standard-version",
-    "predeploy": "npm run build-storybook",    
-    "deploy-storybook": "gh-pages -d storybook-static",    
+    "predeploy": "npm run build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static",
     "build-storybook": "build-storybook",
     "test": "jest --watchAll",
     "test:coverage": "npm test -- --coverage --collectCoverageFrom",
