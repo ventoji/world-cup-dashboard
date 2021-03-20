@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input  Component Should render properly 1`] = `
+<div
+  style={
+    Object {
+      "marginBottom": "15px",
+    }
+  }
+>
+  <Label
+    htmlFor="labelElement"
+    label="Home Team"
+    required={true}
+  />
+  <input
+    id="labelElement"
+    name="hometeam"
+    onChange={[Function]}
+    placeholder="value here"
+    style={Object {}}
+    type="text"
+  />
+</div>
+`;
