@@ -1,0 +1,11 @@
+.input-wc {
+  margin-bottom: '16px';
+}
+
+.input-wc__error {
+  color: red;
+}
+
+.input-wc__borders {
+  border: 'solid 1px red';
+}
