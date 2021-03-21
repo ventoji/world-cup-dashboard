@@ -17,11 +17,10 @@ Just start adding a new game introduce names of the players, once is added you c
 
 ### Detailed scripts
 
-* `npm run build:lib` – generate a resusable version of FootballCupScoreBoard component to be published in a npm registry.
+* `npm run start` – start development with node at port 3000.
 * `npm run build:dev` – build static site for production with webpack + options
-* `npm run dev-server` – starts development server with webpack-dev-server
+* `npm run dev-server` – starts development server with webpack-dev-server at port 9000
 * `npm run storybook` – start development for storybook for all components
-* `npm run prepublish` – build the code formatted in commonjs for  FootballCupScoreBoard component
 * `npm run lint` – check code formatting and rules for react code and JS.
 * `npm run lint:fix` – fix all problems found on the code 
 * `npm run prettier` – check code formatting rules defined on .prettierrc file
