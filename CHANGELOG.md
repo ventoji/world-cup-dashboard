@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.6](https://github.com/ventoji/world-cup-dashboard/compare/v1.0.5...v1.0.6) (2021-03-21)
+
+
+### Bug Fixes
+
+* adding validations to input fields ([35429a3](https://github.com/ventoji/world-cup-dashboard/commit/35429a3e620ff18ae8a790297153f2c36b02d7a6))
+
 ### [1.0.5](https://github.com/ventoji/world-cup-dashboard/compare/v1.0.3...v1.0.5) (2021-03-20)
 
 
