@@ -3,6 +3,7 @@ import './FootballCupScoreBoard.css';
 import StartGameWCConnected from '../StartGameWC/StartGameWCConnected';
 import ScoreBoardConnected from '../ScoreBoard/ScoreBoardConnected';
 import SummaryResultWCConnected from '../SummaryResult/SummaryResultsConnected';
+import CountriesAPI from '../CountriesAPI/CountriesAPI';
 
 const FootballCupScoreBoard = () => {
   return (
@@ -22,6 +23,10 @@ const FootballCupScoreBoard = () => {
         <div className="add-players">
           <h4> Start a new game </h4>
           <StartGameWCConnected />
+        </div>
+
+        <div className="countries">
+        <CountriesAPI />
         </div>
       </main>
     </>
