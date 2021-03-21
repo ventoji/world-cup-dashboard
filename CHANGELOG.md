@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.7](https://github.com/ventoji/world-cup-dashboard/compare/v1.0.6...v1.0.7) (2021-03-21)
+
+
+### Bug Fixes
+
+* adding node server ([45a9f5e](https://github.com/ventoji/world-cup-dashboard/commit/45a9f5e1a169132646fb5fb19d89f7a6f0bed105))
+
 ### [1.0.6](https://github.com/ventoji/world-cup-dashboard/compare/v1.0.5...v1.0.6) (2021-03-21)
 
 
