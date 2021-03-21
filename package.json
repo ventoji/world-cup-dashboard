@@ -4,13 +4,14 @@
   "description": "world cup exercise",
   "main": "index.js",
   "homepage": "https://github.com/ventoji/world-cup-dashboard",
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "scripts": {
     "start": "node server/server.js",
-    "build:lib": "webpack --config webpack.config.js",
     "build:dev": "webpack --config webpack.dev.js",
     "dev-server": "webpack serve --config webpack.dev.js",
     "storybook": "start-storybook -p 6006",
-    "prepublish": "npm run build:lib",
     "ncu": "ncu",
     "ncu:update": "ncu -u",
     "lint": "eslint src/**/*.{js,jsx}",
@@ -25,12 +26,9 @@
     "test:coverage": "npm test -- --coverage --collectCoverageFrom",
     "test:badges": "npm run test:coverage  && jest-coverage-badges"
   },
-  "files": [
-    "lib"
-  ],
+  "license": "MIT",
   "keywords": [],
   "author": "Jorge Vento <vento.ji@gmail.com> (http://www.ventoji.es/)",
-  "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.13.10",
     "@babel/core": "^7.13.10",
@@ -75,13 +73,7 @@
     "uuid": "^8.3.2",
     "webpack": "^5.26.3",
     "webpack-cli": "^4.5.0",
-    "webpack-dev-server": "^3.11.2"
-  },
-  "peerDependencies": {
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
-  },
-  "dependencies": {
+    "webpack-dev-server": "^3.11.2",
     "eslint": "^7.22.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-flowtype": "^5.4.0",
@@ -91,9 +83,17 @@
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-testing-library": "^3.10.1",
-    "eslint-webpack-plugin": "^2.5.2",
+    "eslint-webpack-plugin": "^2.5.2"
+  },
+  "peerDependencies": {
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "dependencies": {
     "node": "^15.10.0",
-    "save-dev": "0.0.1-security"
+    "save-dev": "0.0.1-security",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
@@ -101,6 +101,19 @@
     ],
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --write"
+    ]
+  },
+  "pre-commit": "lint-staged",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
   }
 }
