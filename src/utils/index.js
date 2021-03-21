@@ -48,3 +48,9 @@ export const sortResults = (state) => {
     return 0;
   });
 };
+
+export const nameCountries = (state) => {
+  const countries = state.length > 0 ? state[0]: state;
+  const conuntryName = countries.map(item => item.name.toLowerCase());
+  return conuntryName;
+}

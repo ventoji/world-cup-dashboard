@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import InputWC from '../InputWC';
 import ButtonWC from '../ButtonWC';
+import { validateScoreWCfields } from '../utils/validators';
 
 
 const SCORE_STYLE = {
@@ -21,16 +22,20 @@ const MatchStarted = ({ match, updateScore, handleFinish }) => {
       homeScore: 0,
       awayScore: 0,
     });
+    const [errors, setErrors] = useState({});
   
     const handleMatchScore = (event) => {
   
     const field = event.target.name;
     const value = event.target.value;
+    const errors = validateScoreWCfields(field,value);
+    setErrors(errors);
 
       setMatchScore({
         ...matchScore,
         [field]: value >= 0 ? value : matchScore[field]
       });
+   
     };
   
     const submitScore = (event) => {
@@ -58,6 +63,7 @@ const MatchStarted = ({ match, updateScore, handleFinish }) => {
           type="number"
           style={{ width: '35%' }}
           onChange={handleMatchScore}
+          error={errors.homeScore}
         />{' '}
         -
         <InputWC
@@ -68,6 +74,7 @@ const MatchStarted = ({ match, updateScore, handleFinish }) => {
           type="number"
           style={{ width: '35%' }}
           onChange={handleMatchScore}
+          error={errors.awayScore}
         />
         <ButtonWC
           label="update"
