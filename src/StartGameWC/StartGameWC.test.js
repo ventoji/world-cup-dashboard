@@ -37,7 +37,7 @@ describe('StartGameWC component', () => {
     expect(component.find('#btn-start-game')).toHaveLength(1);
     //     console.log(toJson(component).props.onSubmit.mock.calls.length);
     //expect(component.props.sendMatchDetails).toHaveBeenCalled();
- //   console.log(props.onSubmit.mock);
+    //   console.log(props.onSubmit.mock);
     //  expect(props.onSubmit.mock.calls.length).toEqual(1);
     //   expect(props.onSubmit).toHaveBeenCalledTimes(1);
   });
