@@ -1,6 +1,6 @@
 {
   "name": "wordcup-dashboard",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "world cup exercise",
   "main": "index.js",
   "homepage": "https://github.com/ventoji/world-cup-dashboard",
@@ -26,7 +26,8 @@
     "test": "jest",
     "test:dev": "jest --watchAll",
     "test:coverage": "npm test -- --coverage --collectCoverageFrom",
-    "test:badges": "npm run test:coverage  && jest-coverage-badges"
+    "test:badges": "npm run test:coverage  && jest-coverage-badges",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "Jorge Vento <vento.ji@gmail.com> (http://www.ventoji.es/)",
@@ -74,7 +75,6 @@
     "lint-staged": "^10.5.4",
     "ncu": "^0.2.1",
     "node-sass": "^5.0.0",
-    "npm": "^7.6.3",
     "postcss-loader": "^5.2.0",
     "prettier": "^2.2.1",
     "react-redux": "^7.2.2",

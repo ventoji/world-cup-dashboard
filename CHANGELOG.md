@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.11](https://github.com/ventoji/world-cup-dashboard/compare/v1.0.10...v1.0.11) (2021-03-25)
+
+
+### Bug Fixes
+
+* fixing husky dependencie ([992b77c](https://github.com/ventoji/world-cup-dashboard/commit/992b77cc2db5f2fd446a349e31309f8cce3b90ca))
+
 ### [1.0.10](https://github.com/ventoji/world-cup-dashboard/compare/v1.0.9...v1.0.10) (2021-03-25)
 
 
