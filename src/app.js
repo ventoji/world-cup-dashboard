@@ -4,7 +4,6 @@ import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
 import FootballCupScoreBoard from '../src/FootballCupScoreBoard';
 
-
 const store = configureStore();
 
 // const state = store.getState();

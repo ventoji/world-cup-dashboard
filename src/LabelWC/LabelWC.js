@@ -23,7 +23,7 @@ Label.propTypes = {
 
 Label.defaultProps = {
   htmlFor: 'labelID',
-  label: 'label',
+  label: 'label ',
 };
 
 export default Label;

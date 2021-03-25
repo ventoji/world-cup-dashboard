@@ -19,7 +19,7 @@ ButtonWC.propTypes = {
 };
 
 ButtonWC.defaultProps = {
-  label: 'simple button',
+  label: 'start game',
   onClick: () => {},
 };
 

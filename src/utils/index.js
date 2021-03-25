@@ -50,7 +50,7 @@ export const sortResults = (state) => {
 };
 
 export const nameCountries = (state) => {
-  const countries = state.length > 0 ? state[0]: state;
-  const conuntryName = countries.map(item => item.name.toLowerCase());
+  const countries = state.length > 0 ? state[0] : state;
+  const conuntryName = countries.map((item) => item.name.toLowerCase());
   return conuntryName;
-}
+};

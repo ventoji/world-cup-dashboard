@@ -2,7 +2,7 @@ import React from 'react';
 import LabelWC from '../LabelWC';
 import PropTypes from 'prop-types';
 
-
+/** InputWC field component */
 const InputWC = ({
   htmlId,
   name,
@@ -68,17 +68,17 @@ InputWC.propTypes = {
   error: PropTypes.string,
 
   /** Child component to display next to the input */
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 InputWC.defaultProps = {
   htmlId: '1shdy4',
   type: 'text',
   name: '',
-  label: '',
+  label: 'home team',
   placeholder: 'value here',
   required: true,
-  onChange: () => {}
+  onChange: () => {},
 };
 
 export default InputWC;

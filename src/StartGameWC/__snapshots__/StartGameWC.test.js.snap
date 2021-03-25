@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StartGameWC component should render properly 1`] = `
+<Fragment>
+  <InputWC
+    htmlId="homeTeam"
+    label="home team"
+    name="homeTeam"
+    onChange={[Function]}
+    placeholder="country name"
+    required={true}
+    type="text"
+  />
+  <InputWC
+    htmlId="awayTeam"
+    label="away team"
+    name="awayTeam"
+    onChange={[Function]}
+    placeholder="country name"
+    required={true}
+    type="text"
+  />
+  <ButtonWC
+    id="btn-start-game"
+    label="Start new game"
+    onClick={[Function]}
+  />
+</Fragment>
+`;

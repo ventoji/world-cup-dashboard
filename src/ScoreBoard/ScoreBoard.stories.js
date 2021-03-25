@@ -35,5 +35,5 @@ export const Default = Template.bind({});
 Default.args = {
   games: [],
   updateScore: action('cick'),
-  finishGame: action('cick')
+  finishGame: action('cick'),
 };

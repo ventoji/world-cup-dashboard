@@ -1,4 +1,3 @@
-const path = require('path')
 
 module.exports = {
   "stories": [
@@ -7,20 +6,10 @@ module.exports = {
   ],
   "addons": [
     "@storybook/addon-essentials",
+    "@storybook/preset-scss",
     "@storybook/addon-controls/register",
     "@storybook/addon-knobs/register",
-    "@storybook/addon-a11y"
-  ],
-  webpackFinal: async (config, { configType }) => {
-    config.module.rules.push({
-      test: /\.(scss|css)$/,
-      use: [
-          'style-loader', 
-          'css-loader', 
-          'sass-loader'],
-      include: path.resolve(__dirname, '../src'),
-    });
-  
-    return config;
-  }
+    "@storybook/addon-a11y",
+    "addon-redux/register"
+  ]
 }

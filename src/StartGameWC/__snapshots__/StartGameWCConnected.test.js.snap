@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StartGameWCConnected component should render with given state from Redux store 1`] = `
+<StartGameWCConnected
+  addMatchWC={[MockFunction]}
+  countries={Array []}
+/>
+`;

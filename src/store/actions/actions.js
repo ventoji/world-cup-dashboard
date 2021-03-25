@@ -24,7 +24,7 @@ export const showMatchResultWc = (matchToStore) => ({
   payload: matchToStore,
 });
 
-export const addCountries = (countries) =>({
+export const addCountries = (countries) => ({
   type: ADD_COUNTRIES_WC,
-  payload: countries
+  payload: countries,
 });

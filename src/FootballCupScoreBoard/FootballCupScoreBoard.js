@@ -5,6 +5,7 @@ import ScoreBoardConnected from '../ScoreBoard/ScoreBoardConnected';
 import SummaryResultWCConnected from '../SummaryResult/SummaryResultsConnected';
 import CountriesAPI from '../CountriesAPI/CountriesAPI';
 
+/** World Cup Dashboard component  */
 const FootballCupScoreBoard = () => {
   return (
     <>
@@ -26,7 +27,7 @@ const FootballCupScoreBoard = () => {
         </div>
 
         <div className="countries">
-        <CountriesAPI />
+          <CountriesAPI />
         </div>
       </main>
     </>
