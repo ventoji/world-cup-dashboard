@@ -12,6 +12,7 @@ The root component is `<FootballCupScoreBoard />` and folder `store` hanlde stat
 Just start adding a new game introduce names of the players, once is added you can edit your score or finish the game. All finished games are display in the left side of the dashboard and sorted by the required criteria (total score or the most recently added).
 
 [Storybook documentation](https://ventoji.github.io/world-cup-dashboard)
+
 [Deployed verion in Heroku](https://world-cup-dashboard-vento.herokuapp.com/)
 
 ## Development server
