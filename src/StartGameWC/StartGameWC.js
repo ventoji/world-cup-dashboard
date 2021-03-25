@@ -9,24 +9,19 @@ const INITIAL_GAME = {
   awayTeam: '',
   homeScore: 0,
   awayScore: 0,
-}
-
-const errorBlock = (message) => {
-  return message && (
-    <div  style={{ color: 'red' }}>
-      {message}
-    </div>
-  );
 };
 
-const StartGameWC = ({ onSubmit,countries }) => {
-  const [matchDetails, setMatchDetails] = useState(INITIAL_GAME );
+const errorBlock = (message) => {
+  return message && <div style={{ color: 'red' }}>{message}</div>;
+};
+
+const StartGameWC = ({ onSubmit, countries }) => {
+  const [matchDetails, setMatchDetails] = useState(INITIAL_GAME);
   const [errors, setErrors] = useState({});
 
   const handleMatchDetails = (event) => {
     const value = event.target.value;
     const field = event.target.name;
-
 
     setMatchDetails({
       ...matchDetails,
@@ -39,10 +34,9 @@ const StartGameWC = ({ onSubmit,countries }) => {
     const errors = validateInputsWCField(matchDetails);
     setErrors(errors);
     const isValidForm = Object.getOwnPropertyNames(errors).length === 0;
-    if(isValidForm){
+    if (isValidForm) {
       onSubmit(matchDetails);
     }
-  
   };
   return (
     <>
@@ -64,23 +58,27 @@ const StartGameWC = ({ onSubmit,countries }) => {
         onChange={handleMatchDetails}
         error={errors.awayteam}
       />
-        {errorBlock(errors.sameteams)}
-        {errorBlock(errors.countryname)}
+      {errorBlock(errors.sameteams)}
+      {errorBlock(errors.countryname)}
 
-      <ButtonWC label="Start new game" onClick={sendMatchDetails} />
+      <ButtonWC
+        id="btn-start-game"
+        label="Start new game"
+        onClick={sendMatchDetails}
+      />
     </>
   );
 };
 
-StartGameWC.defaultProps ={
-  countries: []
-}
+StartGameWC.defaultProps = {
+  countries: [],
+};
 
 StartGameWC.propTypes = {
-    /** Function to submit new players */
-    onSubmit: PropTypes.func.isRequired,
-    /** Countries  */
-    countries: PropTypes.array.isRequired
+  /** Function to submit new players */
+  onSubmit: PropTypes.func.isRequired,
+  /** Countries  */
+  countries: PropTypes.array.isRequired,
 };
 
 export default StartGameWC;

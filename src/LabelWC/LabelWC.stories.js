@@ -15,3 +15,9 @@ export const Default = Template.bind({});
 Default.args = {
   label: text('label', 'home Team'),
 };
+
+export const RequiredLabel = Template.bind({});
+RequiredLabel.args = {
+  label: text('label', 'home Team'),
+  required: true,
+};

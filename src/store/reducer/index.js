@@ -40,7 +40,7 @@ export default (state = initialGames, action) => {
 
     case matchActions.FINISH_MATCH_WC:
       return removeById(state, action.payload);
-    
+
     default:
       return state;
   }

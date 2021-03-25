@@ -6,10 +6,10 @@ import { withKnobs } from '@storybook/addon-knobs';
 export default {
   title: 'WC Components/MatchStarted',
   component: MatchStarted,
-  decorators: [withKnobs]
+  decorators: [withKnobs],
 };
 
-const match =  {
+const match = {
   id: 1,
   startAt: 1616113389731,
   homeTeam: 'Mexico',
@@ -18,12 +18,16 @@ const match =  {
   awayScore: 0,
 };
 
-const Template = (args) => <MatchStarted {...args} />;
+const Template = (args) => (
+  <ul>
+    <MatchStarted {...args} />
+  </ul>
+);
 
 export const Default = Template.bind({});
 
 Default.args = {
   match: match,
-  updateScore: action('cick'),
-  handleFinish: action('cick')
+  updateScore: action('updated scored'),
+  handleFinish: action('finish game'),
 };

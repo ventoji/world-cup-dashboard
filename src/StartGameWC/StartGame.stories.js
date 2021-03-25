@@ -6,14 +6,13 @@ import { withKnobs } from '@storybook/addon-knobs';
 export default {
   title: 'WC Components/StartGaneWC',
   component: StartGameWC,
-  decorators: [withKnobs]
+  decorators: [withKnobs],
 };
 
 const Template = (args) => <StartGameWC {...args} />;
 
 export const Default = Template.bind({});
 
-
 Default.args = {
-  onSubmit: action('cick')
+  onSubmit: action('cick'),
 };
