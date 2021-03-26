@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.com/ventoji/world-cup-dashboard.svg?branch=master)](https://travis-ci.com/ventoji/world-cup-dashboard)
 [![codecov](https://codecov.io/gh/ventoji/world-cup-dashboard/branch/master/graph/badge.svg?token=6BLOU5HTV2)](https://codecov.io/gh/ventoji/world-cup-dashboard)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=ventoji/world-cup-dashboard)](https://dependabot.com)
 ## Coding exercise
 
 This is a simple implementation of the Football World Cup Score.
