@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.14](https://github.com/ventoji/world-cup-dashboard/compare/v1.0.13...v1.0.14) (2021-03-29)
+
+
+### Bug Fixes
+
+* adding lib folder for npm registry ([a1c10f8](https://github.com/ventoji/world-cup-dashboard/commit/a1c10f89edca5e2c08f2fb1d742253fa3ed0b121))
+
 ### [1.0.13](https://github.com/ventoji/world-cup-dashboard/compare/v1.0.12...v1.0.13) (2021-03-25)
 
 
