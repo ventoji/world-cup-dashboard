@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.15](https://github.com/ventoji/world-cup-dashboard/compare/v1.0.14...v1.0.15) (2021-03-31)
+
+
+### Bug Fixes
+
+* adding autcomplete functionality ([ea938c2](https://github.com/ventoji/world-cup-dashboard/commit/ea938c27e3b148339a85b81c0020a9da0ad93b97))
+
 ### [1.0.14](https://github.com/ventoji/world-cup-dashboard/compare/v1.0.13...v1.0.14) (2021-03-29)
 
 

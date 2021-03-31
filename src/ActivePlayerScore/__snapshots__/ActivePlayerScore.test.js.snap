@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` ActivePlayer component should render properly 1`] = `
+<Fragment>
+  <InputWC
+    htmlId="findTeam"
+    label="fiend a team"
+    name="homeTeam"
+    onChange={[Function]}
+    placeholder="country name"
+    required={true}
+    type="text"
+  />
+  <span>
+      
+  </span>
+</Fragment>
+`;
