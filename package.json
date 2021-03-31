@@ -50,7 +50,6 @@
     "@storybook/addon-controls": "^6.1.21",
     "@storybook/addon-essentials": "^6.1.21",
     "@storybook/addon-knobs": "^6.1.21",
-    "@storybook/builder-webpack5": "^6.2.0-alpha.30",
     "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^6.1.21",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.0",
@@ -99,12 +98,11 @@
     "react-dom": "17.0.2"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "express": "^4.17.1",
-    "node": "^15.10.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.3",
-    "redux": "^4.0.5",
-    "axios": "^0.21.1"
+    "redux": "^4.0.5"
   }
 }

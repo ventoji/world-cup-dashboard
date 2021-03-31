@@ -33,6 +33,7 @@ exports[`FootballCupScoreBoard  Component Should render properly 1`] = `
       </h4>
       <Connect(StartGameWCConnected) />
     </div>
+    <Connect(ActivePlayer) />
     <div
       className="countries"
     >

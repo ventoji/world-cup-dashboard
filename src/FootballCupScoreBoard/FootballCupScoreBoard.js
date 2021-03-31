@@ -4,6 +4,7 @@ import StartGameWCConnected from '../StartGameWC/StartGameWCConnected';
 import ScoreBoardConnected from '../ScoreBoard/ScoreBoardConnected';
 import SummaryResultWCConnected from '../SummaryResult/SummaryResultsConnected';
 import CountriesAPI from '../CountriesAPI/CountriesAPI';
+import ActivePlayerScore from '../ActivePlayerScore/ActivePlayerScore';
 
 /** World Cup Dashboard component  */
 const FootballCupScoreBoard = () => {
@@ -25,6 +26,8 @@ const FootballCupScoreBoard = () => {
           <h4> Start a new game </h4>
           <StartGameWCConnected />
         </div>
+
+        <ActivePlayerScore />
 
         <div className="countries">
           <CountriesAPI />
