@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[` ActivePlayer component should render properly 1`] = `
+exports[`ActivePlayer component should render properly 1`] = `
 <Fragment>
   <InputWC
     htmlId="findTeam"
@@ -12,7 +12,7 @@ exports[` ActivePlayer component should render properly 1`] = `
     type="text"
   />
   <span>
-      
+     
   </span>
 </Fragment>
 `;

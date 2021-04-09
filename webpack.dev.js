@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     entry: [
       '@babel/polyfill',
       './src/app.js'
@@ -14,8 +14,8 @@ module.exports = {
           use: ['babel-loader']
         },
         {
-          test: /(\.css$)/,  
-          use: ['style-loader', 'css-loader']
+          test: /\.(scss|css)$/,  
+          use: ['style-loader', 'css-loader', 'sass-loader']
         }
       ]
     },
