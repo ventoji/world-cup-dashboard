@@ -2,6 +2,7 @@
 
 exports[`Button component should be submit type 1`] = `
 <button
+  className="wc-button"
   onClick={[Function]}
   type="submit"
 >

@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+//import './ButtonWC.scss';
 
 /** Defautl button WC  */
 const ButtonWC = ({ label, onClick, ...props }) => {
   return (
-    <button type="submit" onClick={onClick} {...props}>
+    <button className="wc-button" type="submit" onClick={onClick} {...props}>
       {label}
     </button>
   );
